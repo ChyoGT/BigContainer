@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		B21EE7E01C9B90DA00FCE809 /* BCGoodListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21EE7DF1C9B90DA00FCE809 /* BCGoodListViewController.m */; };
 		B21EE7E31C9B90EB00FCE809 /* BCGoodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21EE7E21C9B90EB00FCE809 /* BCGoodModel.m */; };
+		B21EE7E61C9BDC8200FCE809 /* BCProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21EE7E51C9BDC8200FCE809 /* BCProfileViewController.m */; };
+		B21EE7E91C9BDCA100FCE809 /* BCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21EE7E81C9BDCA100FCE809 /* BCHomeViewController.m */; };
+		B21EE7EC1C9BDE3B00FCE809 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B21EE7EB1C9BDE3B00FCE809 /* AppDelegate.m */; };
 		B2F332161C9AAC5E00ED19E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F332141C9AAC5E00ED19E5 /* Main.storyboard */; };
 		B2F332181C9AAC5E00ED19E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F332171C9AAC5E00ED19E5 /* Assets.xcassets */; };
 		B2F3321B1C9AAC5E00ED19E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F332191C9AAC5E00ED19E5 /* LaunchScreen.storyboard */; };
@@ -25,6 +28,12 @@
 		B21EE7DF1C9B90DA00FCE809 /* BCGoodListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCGoodListViewController.m; sourceTree = "<group>"; };
 		B21EE7E11C9B90EB00FCE809 /* BCGoodModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCGoodModel.h; sourceTree = "<group>"; };
 		B21EE7E21C9B90EB00FCE809 /* BCGoodModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCGoodModel.m; sourceTree = "<group>"; };
+		B21EE7E41C9BDC8200FCE809 /* BCProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCProfileViewController.h; sourceTree = "<group>"; };
+		B21EE7E51C9BDC8200FCE809 /* BCProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCProfileViewController.m; sourceTree = "<group>"; };
+		B21EE7E71C9BDCA100FCE809 /* BCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCHomeViewController.h; sourceTree = "<group>"; };
+		B21EE7E81C9BDCA100FCE809 /* BCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCHomeViewController.m; sourceTree = "<group>"; };
+		B21EE7EA1C9BDE3B00FCE809 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B21EE7EB1C9BDE3B00FCE809 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B2F332081C9AAC5E00ED19E5 /* BigContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F332151C9AAC5E00ED19E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2F332171C9AAC5E00ED19E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,10 +119,10 @@
 		B2F332221C9AB32300ED19E5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B2F332231C9AB32300ED19E5 /* Goods */,
 				B2F332241C9AB32300ED19E5 /* Home */,
-				B2F332251C9AB32300ED19E5 /* Main */,
+				B2F332231C9AB32300ED19E5 /* Goods */,
 				B2F3322B1C9AB32300ED19E5 /* Profile */,
+				B2F332251C9AB32300ED19E5 /* Main */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -129,6 +138,8 @@
 		B2F332241C9AB32300ED19E5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B21EE7E71C9BDCA100FCE809 /* BCHomeViewController.h */,
+				B21EE7E81C9BDCA100FCE809 /* BCHomeViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -172,6 +183,8 @@
 		B2F3322B1C9AB32300ED19E5 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				B21EE7E41C9BDC8200FCE809 /* BCProfileViewController.h */,
+				B21EE7E51C9BDC8200FCE809 /* BCProfileViewController.m */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -180,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				B2F3322E1C9AB39500ED19E5 /* main.m */,
+				B21EE7EA1C9BDE3B00FCE809 /* AppDelegate.h */,
+				B21EE7EB1C9BDE3B00FCE809 /* AppDelegate.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -317,7 +332,10 @@
 			files = (
 				B2F332361C9AB72100ED19E5 /* BCNavigationController.m in Sources */,
 				B21EE7E31C9B90EB00FCE809 /* BCGoodModel.m in Sources */,
+				B21EE7E91C9BDCA100FCE809 /* BCHomeViewController.m in Sources */,
 				B2F332321C9AB40000ED19E5 /* BCTabBarController.m in Sources */,
+				B21EE7EC1C9BDE3B00FCE809 /* AppDelegate.m in Sources */,
+				B21EE7E61C9BDC8200FCE809 /* BCProfileViewController.m in Sources */,
 				B21EE7E01C9B90DA00FCE809 /* BCGoodListViewController.m in Sources */,
 				B2F3322F1C9AB39500ED19E5 /* main.m in Sources */,
 			);

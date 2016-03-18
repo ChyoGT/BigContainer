@@ -8,30 +8,52 @@
 
 #import "BCGoodListViewController.h"
 
-@interface BCGoodListViewController ()
+@interface BCGoodListViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, weak) UITableView * tableView;
 
 @end
 
 @implementation BCGoodListViewController
 
+- (UITableView *)tableView {
+    if (!_tableView) {
+        UITableView * tableView = [[UITableView alloc] init];
+        [self.view addSubview:tableView];
+        self.tableView = tableView;
+        tableView.dataSource = self;
+        tableView.delegate = self;
+    }
+    return _tableView;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+
+#pragma mark - TableView
+#pragma mark -UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString * cellName = @"cell";
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellName];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellName];
+    }
+    cell.textLabel.text = @"11";
+    return cell;
 }
-*/
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    self.tableView.frame = self.view.bounds;
+}
+
 
 @end

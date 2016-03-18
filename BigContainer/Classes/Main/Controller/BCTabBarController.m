@@ -19,18 +19,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray * barItemClassNameArray = @[@"QDHomeViewController",
-                                        @"QDNewFinanceViewController",
-                                        //                                        @"QDShopViewController",
-                                        @"QDProfileViewController"];
-    NSArray * barItemTitleArray = @[@"首页", @"理财", @"我的"];
+    NSArray * barItemClassNameArray = @[@"BCHomeViewController",
+                                        @"BCGoodListViewController",
+                                        @"BCProfileViewController"];
+    NSArray * barItemTitleArray = @[@"首页", @"货单", @"我的"];
     NSArray * barItemImageNameArray = @[@"tabbar_home_normal",
-                                        @"tabbar_finance_normal",
-                                        //                                        @"tabbar_shop_normal",
+                                        @"tabbar_goods_normal",
                                         @"tabbar_profile_normal"];
     NSArray * barItemSelectedImageNameArray = @[@"tabbar_home_selected",
-                                                @"tabbar_finance_selected",
-                                                //                                                @"tabbar_shop_selected",
+                                                @"tabbar_goods_selected",
                                                 @"tabbar_profile_selected"];
     
     for (int i = 0; i < barItemClassNameArray.count; i++) {

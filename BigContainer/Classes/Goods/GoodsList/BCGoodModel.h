@@ -18,6 +18,5 @@
 @property (nonatomic, strong) NSNumber * moneyExchange;
 
 
-+ (instancetype)goodModelWithDict:()
 
 @end
